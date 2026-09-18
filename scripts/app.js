@@ -43,7 +43,7 @@
     grid.replaceChildren();
     visible.forEach(p => {
       const card = document.createElement('article'); card.className = 'product-card';
-      card.innerHTML = `<button class="product-trigger" aria-label="Ver detalhes de ${p.name}"><div class="product-image"><img src="../assets/${p.image}" alt="${p.name}" loading="lazy"><span class="product-view" aria-hidden="true">${arrowMarkup}</span></div><div class="product-info"><small>${p.label || p.category}</small><h3>${p.name.slice(0, p.name.lastIndexOf(" "))} <em>${p.name.slice(p.name.lastIndexOf(" ") + 1)}</em></h3><p>${p.tagline}</p></div></button>`;
+      card.innerHTML = `<button class="product-trigger" aria-label="Ver detalhes de ${p.name}"><div class="product-image"><img src="images/products/${p.image}" alt="${p.name}" loading="lazy"><span class="product-view" aria-hidden="true">${arrowMarkup}</span></div><div class="product-info"><small>${p.label || p.category}</small><h3>${p.name.slice(0, p.name.lastIndexOf(" "))} <em>${p.name.slice(p.name.lastIndexOf(" ") + 1)}</em></h3><p>${p.tagline}</p></div></button>`;
       card.querySelector('button').addEventListener('click', e => openProduct(p, e.currentTarget)); grid.append(card);
     });
     filters.forEach(b => { const active = b.dataset.filter === category; b.classList.toggle('active', active); b.setAttribute('aria-pressed', String(active)); });
@@ -52,7 +52,7 @@
   }
   function openProduct(p, button) {
     selectedProduct = p; opener = button;
-    document.querySelector('#dialog-image').src = `../assets/${p.image}`;
+    document.querySelector('#dialog-image').src = `images/products/${p.image}`;
     document.querySelector('#dialog-image').alt = p.name;
     document.querySelector('#dialog-category').textContent = p.label || p.category;
     document.querySelector('#dialog-title').textContent = p.name;
@@ -71,7 +71,7 @@
       link.href = available[platform.key];
       link.target = '_blank';
       link.rel = 'noopener noreferrer';
-      link.innerHTML = '<img src="../assets/' + platform.logo + '" alt="" width="25" height="22"><span>' + platform.label + '</span><span aria-hidden="true">' + arrowMarkup + '</span><span class="sr-only"> (abre em nova aba)</span>';
+      link.innerHTML = '<img src="images/marketplaces/' + platform.logo + '" alt="" width="25" height="22"><span>' + platform.label + '</span><span aria-hidden="true">' + arrowMarkup + '</span><span class="sr-only"> (abre em nova aba)</span>';
       storeContainer.append(link);
     });
     document.querySelector('.detail-note p').textContent = Object.keys(available).length === 1

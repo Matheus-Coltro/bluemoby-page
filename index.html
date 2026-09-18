@@ -7,23 +7,23 @@
   <meta name="description"
     content="Explore os móveis Blue Moby para cozinha, quarto, sala e banheiro. Encontre inspiração para uma casa do seu jeito.">
   <title>Blue Moby</title>
-  <link rel="icon" type="image/png" href="../assets/blue-moby-rio.png">
+  <link rel="icon" type="image/png" href="images/brand/mascot.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/main.css">
   <script>try { document.documentElement.dataset.theme = localStorage.getItem("blue-moby-theme") === "dark" ? "dark" : "light" } catch { }</script>
-  <script src="preferences.js" defer></script>
-  <script src="script.js" defer></script>
+  <script src="scripts/preferences.js" defer></script>
+  <script src="scripts/app.js" defer></script>
 </head>
 
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
   <header class="header">
     <div class="container header-inner">
-      <a class="brand" href="#inicio" aria-label="Blue Moby — início"><img src="../assets/logo.png" alt="Blue Moby"
+      <a class="brand" href="#inicio" aria-label="Blue Moby — início"><img src="images/brand/logo.png" alt="Blue Moby"
           width="145" height="48"></a>
       <nav class="nav" id="navigation" aria-label="Navegação principal"><a href="#ambientes">Ambientes</a><a
           href="#produtos">Coleção</a><a href="#onde-comprar">Onde comprar</a><a href="#sobre">Sobre</a><a
@@ -80,7 +80,7 @@
             </svg></span></a>
         <div class="hero-footnote"><span class="line"></span>Do primeiro cantinho à casa inteira.</div>
       </div>
-      <div class="hero-visual"><img class="hero-photo" src="../assets/hero-cozinha-wide.png"
+      <div class="hero-visual"><img class="hero-photo" src="images/hero/kitchen-wide.png"
           alt="Cozinha Blue Moby em um ambiente decorado" fetchpriority="high">
         <a class="hero-tag" href="#produtos" data-category="Cozinha"><span><small>Do café da manhã ao
               jantar</small><strong>Encontre espaço para tudo.</strong></span><span class="circle-arrow"
@@ -137,31 +137,31 @@
         <p>Escolha um ambiente.<br>Descubra novas possibilidades para ele.</p>
       </div>
       <div class="environments">
-        <a class="environment" href="#produtos" data-category="Cozinha"><img src="../assets/cozinha.png"
+        <a class="environment" href="#produtos" data-category="Cozinha"><img src="images/rooms/cozinha.png"
             alt="Ambiente de cozinha" loading="lazy"><span><strong>Cozinha</strong><b><svg class="interactive-arrow"
                 width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M5 19 19 5M5 5h14v14" />
               </svg></b></span></a>
-        <a class="environment" href="#produtos" data-category="Quarto"><img src="../assets/quarto.png"
+        <a class="environment" href="#produtos" data-category="Quarto"><img src="images/rooms/quarto.png"
             alt="Ambiente de quarto" loading="lazy"><span><strong>Quarto</strong><b><svg class="interactive-arrow"
                 width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M5 19 19 5M5 5h14v14" />
               </svg></b></span></a>
-        <a class="environment" href="#produtos" data-category="Sala"><img src="../assets/sala.png"
+        <a class="environment" href="#produtos" data-category="Sala"><img src="images/rooms/sala.png"
             alt="Ambiente de sala" loading="lazy"><span><strong>Sala</strong><b><svg class="interactive-arrow"
                 width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M5 19 19 5M5 5h14v14" />
               </svg></b></span></a>
-        <a class="environment" href="#produtos" data-category="Banheiro"><img src="../assets/banheiro.png"
+        <a class="environment" href="#produtos" data-category="Banheiro"><img src="images/rooms/banheiro.png"
             alt="Ambiente de banheiro" loading="lazy"><span><strong>Banheiro</strong><b><svg class="interactive-arrow"
                 width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M5 19 19 5M5 5h14v14" />
               </svg></b></span></a>
-        <a class="environment" href="#produtos" data-category="Jantar"><img src="../assets/conjunto-amanda.png"
+        <a class="environment" href="#produtos" data-category="Jantar"><img src="images/products/conjunto-amanda.png"
             alt="Ambiente de sala de jantar" loading="lazy"><span><strong>Jantar</strong><b><svg
                 class="interactive-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -210,15 +210,15 @@
       </div>
       <div class="market-tabs" role="tablist" aria-label="Escolha uma plataforma"><button class="market-tab"
           id="tab-mercado-livre" role="tab" aria-selected="true" aria-controls="panel-mercado-livre" tabindex="0"
-          type="button"><img src="../assets/mercado-livre.png" alt="" width="36" height="30"><span>Mercado
+          type="button"><img src="images/marketplaces/mercado-livre.png" alt="" width="36" height="30"><span>Mercado
             Livre</span></button>
         <button class="market-tab" id="tab-shopee" role="tab" aria-selected="false" aria-controls="panel-shopee"
-          tabindex="-1" type="button"><img src="../assets/shopee.svg" alt="" width="36"
+          tabindex="-1" type="button"><img src="images/marketplaces/shopee.svg" alt="" width="36"
             height="30"><span>Shopee</span></button>
       </div>
       <div class="market-panel" id="panel-mercado-livre" role="tabpanel" aria-labelledby="tab-mercado-livre"
         tabindex="0">
-        <div class="market-copy"><span class="market-brand mercado-livre"><img src="../assets/mercado-livre.png" alt=""
+        <div class="market-copy"><span class="market-brand mercado-livre"><img src="images/marketplaces/mercado-livre.png" alt=""
               width="48" height="40"><span>Mercado Livre</span></span>
           <h3>Seu jeito de comprar.<br>Nosso cuidado em cada escolha.</h3>
           <p>Conheça os móveis Blue Moby disponíveis no Mercado Livre. Confira os acabamentos, as medidas e as condições
@@ -235,7 +235,7 @@
         </div>
       </div>
       <div class="market-panel" id="panel-shopee" role="tabpanel" aria-labelledby="tab-shopee" tabindex="0" hidden>
-        <div class="market-copy"><span class="market-brand shopee"><img src="../assets/shopee.svg" alt="" width="48"
+        <div class="market-copy"><span class="market-brand shopee"><img src="images/marketplaces/shopee.svg" alt="" width="48"
               height="40"><span>Shopee</span></span>
           <h3>Seu jeito de comprar.<br>Nosso cuidado em cada escolha.</h3>
           <p>Conheça os móveis Blue Moby disponíveis na Shopee. Confira os acabamentos, as medidas e as condições de
@@ -281,23 +281,23 @@
         </div>
         <div class="company-visual">
           <div class="company-gallery" aria-label="Imagens da estrutura e do dia a dia da Blue Moby">
-            <figure class="company-photo photo-1"><img src="../assets/empresa-aerea.png"
+            <figure class="company-photo photo-1"><img src="images/company/empresa-aerea.png"
                 alt="Vista aérea dos barracões e da área de circulação" loading="lazy">
               <figcaption>Por outro ângulo</figcaption>
             </figure>
-            <figure class="company-photo photo-2"><img src="../assets/empresa-barracoes.png"
+            <figure class="company-photo photo-2"><img src="images/company/empresa-barracoes.png"
                 alt="Vista aérea das instalações da empresa" loading="lazy">
               <figcaption>Onde acontece</figcaption>
             </figure>
-            <figure class="company-photo photo-3"><img src="../assets/empresa-logistica.jpg"
+            <figure class="company-photo photo-3"><img src="images/company/empresa-logistica.jpg"
                 alt="Carga, descarga e transporte na Blue Moby" loading="lazy">
               <figcaption>Nossa operação</figcaption>
             </figure>
-            <figure class="company-photo photo-4"><img src="../assets/empresa-estrutura.jpg"
+            <figure class="company-photo photo-4"><img src="images/company/empresa-estrutura.jpg"
                 alt="Entrada e instalações da Blue Moby em Fernandópolis" loading="lazy">
               <figcaption>Nossa estrutura</figcaption>
             </figure>
-            <figure class="company-photo photo-5"><img src="../assets/empresa-escritorio.jpg"
+            <figure class="company-photo photo-5"><img src="images/company/empresa-escritorio.jpg"
                 alt="Logo Blue Moby e miniaturas de caminhões no escritório" loading="lazy">
               <figcaption>Nosso escritório</figcaption>
             </figure>
@@ -337,7 +337,7 @@
   </footer>
   <dialog id="product-dialog" aria-labelledby="dialog-title"><button class="dialog-close"
       aria-label="Fechar detalhes">×</button>
-    <div class="dialog-layout"><img id="dialog-image" src="../assets/comoda-miami.png" alt="">
+    <div class="dialog-layout"><img id="dialog-image" src="images/products/comoda-miami.png" alt="">
       <div class="dialog-copy"><span class="eyebrow" id="dialog-category"></span>
         <h2 id="dialog-title"></h2>
         <p id="dialog-description"></p>

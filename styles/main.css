@@ -3580,12 +3580,10 @@ html[lang="zh-CN"] .support h2 em {
     }
 }
 
-/* Keep the original multicolour mark readable on the dark header. */
-[data-theme="dark"] .header .brand {
-    background: #fbfaf7;
-    border-radius: 6px;
-    height: 76px
-}
+/* Transparent brand variants follow the saved theme before first paint. */
+.brand .brand-logo-dark{display:none}
+[data-theme="dark"] .brand .brand-logo-light{display:none}
+[data-theme="dark"] .brand .brand-logo-dark{display:block}
 
 @media(min-width:901px) {
     .header-tools {
@@ -3594,17 +3592,5 @@ html[lang="zh-CN"] .support h2 em {
 
     .header .nav {
         margin-inline: auto
-    }
-}
-
-@media(max-width:900px) {
-    [data-theme="dark"] .header .brand {
-        height: 60px
-    }
-}
-
-@media(max-width:400px) {
-    [data-theme="dark"] .header .brand {
-        height: 55px
     }
 }

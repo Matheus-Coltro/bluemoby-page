@@ -326,9 +326,9 @@
       "en": "Based in Fernandópolis, in the state of São Paulo, Brazil, Blue Moby operates in manufacturing, retail and importing. By bringing these areas together, the company offers furniture that combines function, style and possibilities for every room.",
       "zh": "Blue Moby 总部位于巴西圣保罗州内陆城市费尔南多波利斯，业务涵盖制造、零售与进口。公司整合各领域的优势，为不同空间提供兼具实用性与风格的家具。"
     },
-    "Presente no comércio online desde 2025, a empresa segue em constante crescimento. Entre a estrutura física e os canais digitais, a Blue Moby desenvolve sua trajetória com organização, proximidade com os clientes e atenção a cada etapa da operação.": {
-      "en": "Selling online since 2025, the company continues to grow. Across its physical facilities and digital channels, Blue Moby builds its business through careful organisation, close customer relationships and attention to every stage of its operations.",
-      "zh": "自 2025 年开展线上销售以来，公司持续成长。从实体设施到数字渠道，Blue Moby 以有序的管理、与客户的紧密联系以及对运营每个环节的关注，稳步发展。"
+    "Presente no comércio online desde 2021, a empresa segue em constante crescimento. Entre a estrutura física e os canais digitais, a Blue Moby desenvolve sua trajetória com organização, proximidade com os clientes e atenção a cada etapa da operação.": {
+      "en": "Selling online since 2021, the company continues to grow. Across its physical facilities and digital channels, Blue Moby builds its business through careful organisation, close customer relationships and attention to every stage of its operations.",
+      "zh": "自 2021 年开展线上销售以来，公司持续成长。从实体设施到数字渠道，Blue Moby 以有序的管理、与客户的紧密联系以及对运营每个环节的关注，稳步发展。"
     },
     "Brasil": {
       "en": "Brazil",
@@ -338,9 +338,9 @@
       "en": "Based in Brazil",
       "zh": "总部位于巴西"
     },
-    "Desde 2025": {
-      "en": "Since 2025",
-      "zh": "始于 2025 年"
+    "Desde 2021": {
+      "en": "Since 2021",
+      "zh": "始于 2021 年"
     },
     "No comércio online": {
       "en": "Selling online",

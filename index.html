@@ -17,6 +17,7 @@
   <script>try { document.documentElement.dataset.theme = localStorage.getItem("blue-moby-theme") === "dark" ? "dark" : "light" } catch { }</script>
   <script src="scripts/preferences.js" defer></script>
   <script src="scripts/app.js" defer></script>
+  <script src="scripts/hero-carousel.js" defer></script>
 </head>
 
 <body>
@@ -81,8 +82,21 @@
             </svg></span></a>
         <div class="hero-footnote"><span class="line"></span>Do primeiro cantinho à casa inteira.</div>
       </div>
-      <div class="hero-visual"><img class="hero-photo" src="images/hero/kitchen-wide.png"
-          alt="Cozinha Blue Moby em um ambiente decorado" fetchpriority="high">
+      <div class="hero-visual" id="hero-slides"><img class="hero-photo hero-slide is-active"
+          src="images/hero/kitchen-wide.png" alt="Cozinha Blue Moby em um ambiente decorado" fetchpriority="high">
+        <img class="hero-photo hero-slide" src="images/hero/dining-bellagio-linea.png"
+          alt="Mesa Bellagio com cadeiras Linea em uma sala de jantar" aria-hidden="true" decoding="async"
+          fetchpriority="low">
+        <img class="hero-photo hero-slide" src="images/hero/tv-panel-lume.png"
+          alt="Painel de TV Lume em uma sala de estar" aria-hidden="true" decoding="async" fetchpriority="low">
+        <img class="hero-photo hero-slide" src="images/hero/cooktop-adriana.png"
+          alt="Balcão cooktop Adriana em uma cozinha integrada" aria-hidden="true" decoding="async" fetchpriority="low">
+        <button class="hero-next" type="button" aria-label="Próxima imagem" aria-controls="hero-slides"><svg width="20"
+            height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <path d="m9 5 7 7-7 7" />
+          </svg></button>
+
         <a class="hero-tag" href="#produtos" data-category="Cozinha"><span><small>Do café da manhã ao
               jantar</small><strong>Encontre espaço para tudo.</strong></span><span class="circle-arrow"
             aria-hidden="true"><svg class="interactive-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none"

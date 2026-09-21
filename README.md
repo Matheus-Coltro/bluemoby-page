@@ -35,7 +35,7 @@ A coleção pode ser explorada por ambiente, com detalhes de cada peça e acesso
 
 | Recurso | O que o visitante encontra |
 | --- | --- |
-| **Abertura imersiva** | Fotografia ampla integrada ao título por uma camada de cor translúcida. |
+| **Abertura imersiva** | Carrossel de quatro ambientes, com transição suave a cada 6 segundos e avanço manual à direita, integrado ao título por uma camada de cor translúcida. |
 | **Coleção por ambiente** | Filtros para cozinha, quarto, sala de estar, banheiro e jantar. |
 | **Detalhes de cada peça** | Pop-ups com imagem, descrição, cópia do nome e links específicos dos anúncios. |
 | **Marketplaces** | Abas para Mercado Livre e Shopee; cada produto mostra apenas as plataformas em que está disponível. |
@@ -76,6 +76,7 @@ bluemoby-page/
 │   └── main.css            # Identidade visual, temas e responsividade
 ├── scripts/
 │   ├── app.js              # Coleção, filtros, pop-ups, menu e abas
+│   ├── hero-carousel.js    # Carrossel da abertura e temporização
 │   └── preferences.js      # Traduções e preferências do visitante
 ├── images/
 │   ├── brand/              # Logo e mascote

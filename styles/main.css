@@ -3594,3 +3594,13 @@ html[lang="zh-CN"] .support h2 em {
         margin-inline: auto
     }
 }
+
+/* Crossfade only: keep the original photo dimensions, crop and colour veil. */
+.hero .hero-slide{opacity:0;transition:opacity .9s ease;pointer-events:none}
+.hero .hero-slide.is-active{opacity:1}
+.hero-next{position:absolute;z-index:3;top:50%;right:22px;transform:translateY(-50%);display:grid;place-items:center;width:42px;height:42px;padding:0;border:1px solid #ffffff65;border-radius:50%;background:#fbfaf738;backdrop-filter:blur(8px);color:#002f6d;cursor:pointer;pointer-events:auto;transition:background .25s ease,border-color .25s ease}
+.hero-next:hover,.hero-next:focus-visible{background:#fbfaf7ba;border-color:#ffffffb3}
+[data-theme="dark"] .hero-next{background:#002f6d45;color:#fff;border-color:#ffffff55}
+[data-theme="dark"] .hero-next:hover,[data-theme="dark"] .hero-next:focus-visible{background:#002f6dbb}
+@media(max-width:600px){.hero-next{top:auto;bottom:calc(28.125vw + 12px);right:16px;transform:none;width:38px;height:38px}}
+@media(prefers-reduced-motion:reduce){.hero .hero-slide{transition:none}}

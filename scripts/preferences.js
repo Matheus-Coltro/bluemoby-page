@@ -2,6 +2,24 @@
 (() => {
   'use strict';
   const dictionary = {
+
+  "Próxima imagem": {
+    "en": "Next image",
+    "zh": "下一张图片"
+  },
+  "Mesa Bellagio com cadeiras Linea em uma sala de jantar": {
+    "en": "Bellagio dining table with Linea chairs in a dining room",
+    "zh": "餐厅中的 Bellagio 餐桌与 Linea 餐椅"
+  },
+  "Painel de TV Lume em uma sala de estar": {
+    "en": "Lume TV panel in a living room",
+    "zh": "客厅中的 Lume 电视背景板"
+  },
+  "Balcão cooktop Adriana em uma cozinha integrada": {
+    "en": "Adriana cooktop cabinet in an open-plan kitchen",
+    "zh": "开放式厨房中的 Adriana 灶台柜"
+  }
+,
     "Pular para o conteúdo": {
       "en": "Skip to content",
       "zh": "跳至主要内容"

@@ -2,6 +2,12 @@
 (() => {
   'use strict';
   const dictionary = {
+
+  "Conheça a Blue Moby: móveis para cozinha, quarto, sala, banheiro e jantar. Empresa de Fernandópolis, SP, com lojas no Mercado Livre e na Shopee.": {
+    "en": "Discover Blue Moby furniture for kitchens, bedrooms, living rooms, bathrooms and dining rooms. Based in Fernandópolis, Brazil, with stores on Mercado Livre and Shopee.",
+    "zh": "探索 Blue Moby 的厨房、卧室、客厅、浴室及餐厅家具。公司位于巴西费尔南多波利斯，在 Mercado Livre 和 Shopee 设有店铺。"
+  }
+,
     "Ampliar foto:": {"en":"Enlarge photo:","zh":"放大照片："},
     "Fechar foto ampliada": {"en":"Close enlarged photo","zh":"关闭放大的照片"},
 

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://bluemoby.com.br/</loc>
+    <image:image><image:loc>https://bluemoby.com.br/images/hero/kitchen-wide.png</image:loc></image:image>
+    <image:image><image:loc>https://bluemoby.com.br/images/hero/dining-bellagio-linea.png</image:loc></image:image>
+    <image:image><image:loc>https://bluemoby.com.br/images/hero/tv-panel-lume.png</image:loc></image:image>
+    <image:image><image:loc>https://bluemoby.com.br/images/hero/cooktop-adriana.png</image:loc></image:image>
+    <image:image><image:loc>https://bluemoby.com.br/images/products/comoda-miami.png</image:loc></image:image>
+    <image:image><image:loc>https://bluemoby.com.br/images/products/cozinha-tati.png</image:loc></image:image>
+    <image:image><image:loc>https://bluemoby.com.br/images/products/home-havana.png</image:loc></image:image>
+    <image:image><image:loc>https://bluemoby.com.br/images/products/comoda-caribe.png</image:loc></image:image>
+    <image:image><image:loc>https://bluemoby.com.br/images/products/gabinete-flora.png</image:loc></image:image>
+    <image:image><image:loc>https://bluemoby.com.br/images/products/conjunto-amanda.png</image:loc></image:image>
+  </url>
+</urlset>

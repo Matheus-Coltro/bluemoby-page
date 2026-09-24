@@ -103,6 +103,14 @@ Os nomes usados como chaves em `listings` devem corresponder aos nomes em `produ
 
 Para publicar em uma hospedagem estática, publique a raiz do repositório, mantendo `styles/`, `scripts/` e `images/` ao lado de **`index.html`**. A página abre diretamente na URL principal, inclusive em um subdiretório como o de um projeto no GitHub Pages.
 
+## SEO e presença no Google
+
+O projeto inclui sitemap, robots.txt, URL canônica, dados estruturados da empresa e coleção no HTML inicial. Veja o [guia de SEO e indexação](docs/seo.md) para publicar, verificar o domínio no Google Search Console e enviar o sitemap.
+
+Ao atualizar a coleção, execute o comando abaixo antes de publicar:
+
+    node tools/update-catalog.cjs
+
 ## A Blue Moby
 
 Com sede em **Fernandópolis, São Paulo, Brasil**, a Blue Moby atua em **fabricação, varejo e importação**. Presente no comércio online desde **2025**, a empresa está em constante crescimento, conectando sua estrutura física aos canais digitais e ao atendimento próximo dos clientes.

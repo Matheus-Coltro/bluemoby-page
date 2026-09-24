@@ -3604,3 +3604,26 @@ html[lang="zh-CN"] .support h2 em {
 [data-theme="dark"] .hero-next:hover,[data-theme="dark"] .hero-next:focus-visible{background:#002f6dbb}
 @media(max-width:600px){.hero-next{top:auto;bottom:calc(28.125vw + 12px);right:16px;transform:none;width:38px;height:38px}}
 @media(prefers-reduced-motion:reduce){.hero .hero-slide{transition:none}}
+
+/* Company gallery: preserve the collage while making each photo accessible. */
+.company-photo-open{position:absolute;inset:0;width:100%;height:100%;border:0;padding:0;border-radius:inherit;background:transparent;cursor:zoom-in}
+.company-photo:focus-within{z-index:7;box-shadow:0 12px 30px #00173350}
+.company-photo-open:focus-visible{outline:2px solid #fff;outline-offset:4px}
+body.company-lightbox-open{overflow:hidden}
+#company-lightbox{width:fit-content;max-width:calc(100vw - 40px);max-height:calc(100dvh - 40px);margin:auto;padding:46px 12px 0;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink);overflow:auto;box-shadow:0 24px 90px #00152e50}
+#company-lightbox[open]{animation:company-lightbox-in .28s cubic-bezier(.2,.7,.3,1) both}
+#company-lightbox::backdrop{background:rgba(0,17,40,.72);backdrop-filter:blur(5px);animation:company-backdrop-in .28s ease both}
+.lightbox-figure{margin:0}
+#company-lightbox .lightbox-image{display:block;width:auto;height:auto;max-width:min(1100px,calc(100vw - 66px));max-height:calc(100dvh - 144px);object-fit:contain;border-radius:4px;margin:auto}
+#lightbox-caption{padding:15px 12px 17px;text-align:center;font-size:12px;line-height:1.5;color:var(--muted)}
+.lightbox-close{position:absolute;right:9px;top:7px;display:grid;place-items:center;width:32px;height:32px;padding:0;border:0;border-radius:50%;background:transparent;color:var(--ink);transition:background .2s ease}
+.lightbox-close:hover{background:#002f6d0c}
+[data-theme="dark"] .lightbox-close:hover{background:#ffffff12}
+#company-lightbox.is-closing{animation:company-lightbox-out .18s ease both}
+#company-lightbox.is-closing::backdrop{animation:company-backdrop-out .18s ease both}
+@keyframes company-lightbox-in{from{opacity:0;transform:translateY(12px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes company-lightbox-out{from{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(.985)}}
+@keyframes company-backdrop-in{from{opacity:0}to{opacity:1}}
+@keyframes company-backdrop-out{from{opacity:1}to{opacity:0}}
+@media(max-width:600px){#company-lightbox{max-width:calc(100vw - 24px);padding-inline:8px}#company-lightbox .lightbox-image{max-width:calc(100vw - 42px)}}
+@media(prefers-reduced-motion:reduce){#company-lightbox[open],#company-lightbox::backdrop,#company-lightbox.is-closing,#company-lightbox.is-closing::backdrop{animation:none}}

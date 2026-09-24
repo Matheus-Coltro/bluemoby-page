@@ -2,6 +2,8 @@
 (() => {
   'use strict';
   const dictionary = {
+    "Ampliar foto:": {"en":"Enlarge photo:","zh":"放大照片："},
+    "Fechar foto ampliada": {"en":"Close enlarged photo","zh":"关闭放大的照片"},
 
   "Próxima imagem": {
     "en": "Next image",
